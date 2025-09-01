@@ -4,157 +4,298 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helfrid Hochegger CV</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <img src="Helfrid_2023.png" width="189" height="141" alt="Helfrid's Profile Picture">
-            </td>
-            <td>
-                <h1>Helfrid Hochegger</h1>
-                <p><em><a href="http://www.sussex.ac.uk/lifesci/hocheggerlab/"> Cell Cycle Control Laboratory</a>,
-                    GDSC, <a href="https://www.sussex.ac.uk"> University of Sussex</a></em></p>
-                <p> PhD, 2002 at <a href="https://www.crick.ac.uk/about-us/our-history/our-founders/our-founding-institutes">
-                                ICRF Clare Hall</a>, UK</p>
-            </td>
-        </tr>
+    <title>Helfrid Hochegger - Cell Cycle Researcher</title>
     
-    </table > 
-    <p>I am a scientist working at the University of Sussex. My main research interest 
-        is the control of the eukaryotic cell cycle.
-    </p>
-    <p>
-        My lab investigates how cells switch between interphase and mitosis.
-    </p>
-    <hr>
-        <h3>Specific Research Interests</h3>
-            <ul cellspacing=20>
-                <li>G2/M switch and mitotic entry regulation</li>
-                <p></p>
-                <li>Kinases and Phosphatases that coordinate mitotic entry and exit</li>
-                <p></p>
-                <li>Cancer biology of G2/M regulation</li>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lab-blue': '#0066cc',
+                        'lab-gray': '#f5f5f5',
+                        'paper': '#fafafa',
+                        'ink': '#1a1a1a',
+                        'accent': '#0055aa',
+                        'muted': '#666666',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+    <!-- Header Section -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <img src="Helfrid_2023.png" 
+                     alt="Helfrid Hochegger" 
+                     class="w-48 h-36 object-cover rounded-lg shadow-md">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl font-light text-ink mb-2">Helfrid Hochegger</h1>
+                    <p class="text-lab-blue font-medium text-lg mb-1">Professor in Genome Stability</p>
+                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 text-muted">
+                        <a href="http://www.sussex.ac.uk/lifesci/hocheggerlab/" 
+                           class="hover:text-lab-blue transition-colors duration-200">
+                            Cell Cycle Control Laboratory
+                        </a>
+                        <span class="hidden sm:inline">•</span>
+                        <a href="https://www.sussex.ac.uk" 
+                           class="hover:text-lab-blue transition-colors duration-200">
+                            University of Sussex
+                        </a>
+                    </div>
+                    <p class="text-sm text-muted mt-2">
+                        PhD, 2002 at <a href="https://www.crick.ac.uk/about-us/our-history/our-founders/our-founding-institutes" 
+                                       class="text-lab-blue hover:text-accent transition-colors duration-200">
+                        ICRF Clare Hall</a>, UK
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Introduction -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg p-8 shadow-sm">
+                <p class="text-lg leading-relaxed mb-4">
+                    I am a scientist working at the University of Sussex. My main research interest 
+                    is the control of the eukaryotic cell cycle.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    My lab investigates how cells switch between interphase and mitosis.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research Interests & Methodology Grid -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Research Interests -->
+            <section class="bg-white rounded-lg p-8 shadow-sm">
+                <h2 class="text-2xl font-semibold text-ink mb-6 border-b border-lab-gray pb-2">
+                    Research Interests
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>G2/M switch and mitotic entry regulation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>Kinases and Phosphatases that coordinate mitotic entry and exit</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>Cancer biology of G2/M regulation</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Methodology -->
+            <section class="bg-white rounded-lg p-8 shadow-sm">
+                <h2 class="text-2xl font-semibold text-ink mb-6 border-b border-lab-gray pb-2">
+                    Methodology
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>Chemical Genetics and Gene Targeting</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>High content and super resolution microscopy</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-lab-blue mr-2 mt-1">▸</span>
+                        <span>Image processing and analysis using Python</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Career Timeline -->
+        <section class="bg-white rounded-lg p-8 shadow-sm mb-12">
+            <h2 class="text-2xl font-semibold text-ink mb-6 border-b border-lab-gray pb-2">
+                Career Timeline
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b border-lab-gray">
+                            <th class="text-left py-3 px-4 font-medium text-muted">Period</th>
+                            <th class="text-left py-3 px-4 font-medium text-muted">Position</th>
+                            <th class="text-left py-3 px-4 font-medium text-muted">Institution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">2022 - Present</td>
+                            <td class="py-3 px-4 font-medium">Professor in Genome Stability</td>
+                            <td class="py-3 px-4">University of Sussex, UK</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">2016 - 2022</td>
+                            <td class="py-3 px-4">Reader in Genome Stability</td>
+                            <td class="py-3 px-4">University of Sussex, UK</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">2012 - 2018</td>
+                            <td class="py-3 px-4">CRUK Senior Research Fellow</td>
+                            <td class="py-3 px-4">University of Sussex, UK</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">2007 - 2012</td>
+                            <td class="py-3 px-4">Wellcome Trust Career Development Fellow</td>
+                            <td class="py-3 px-4">University of Sussex, UK</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">2002 - 2007</td>
+                            <td class="py-3 px-4">Postdoctoral Researcher</td>
+                            <td class="py-3 px-4">Kyoto University, Japan (with S. Takeda)</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">1998 - 2002</td>
+                            <td class="py-3 px-4">PhD Student</td>
+                            <td class="py-3 px-4">ICRF Clare Hall, UK (with T. Hunt)</td>
+                        </tr>
+                        <tr class="hover:bg-lab-gray transition-colors duration-200">
+                            <td class="py-3 px-4 text-muted">1998</td>
+                            <td class="py-3 px-4">Diplom Biochemistry</td>
+                            <td class="py-3 px-4">Freie Universitaet Berlin, Germany</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="bg-white rounded-lg p-8 shadow-sm mb-12">
+            <h2 class="text-2xl font-semibold text-ink mb-6 border-b border-lab-gray pb-2">
+                Publications
+            </h2>
+            
+            <!-- Profile Links -->
+            <div class="flex flex-wrap gap-4 mb-8">
+                <a href="https://scholar.google.com/citations?user=Z-WmjVsAAAAJ&hl=en" 
+                   class="inline-flex items-center px-4 py-2 bg-lab-blue text-white rounded-lg hover:bg-accent transition-colors duration-200">
+                    Google Scholar
+                </a>
+                <a href="https://orcid.org/0000-0001-8366-6198" 
+                   class="inline-flex items-center px-4 py-2 border border-lab-blue text-lab-blue rounded-lg hover:bg-lab-gray transition-colors duration-200">
+                    ORCID
+                </a>
+                <a href="https://www.researchgate.net/profile/Helfrid-Hochegger" 
+                   class="inline-flex items-center px-4 py-2 border border-lab-blue text-lab-blue rounded-lg hover:bg-lab-gray transition-colors duration-200">
+                    ResearchGate
+                </a>
+            </div>
+
+            <!-- Recent Publications -->
+            <h3 class="text-lg font-medium text-ink mb-4">Recent Contributions</h3>
+            <ul class="space-y-4">
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.nature.com/articles/s41467-025-62943-z" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        CDK4/6 inhibition enhances the efficacy of DNA damage-inducing therapies
+                    </a>
+                    <p class="text-sm text-muted mt-1">Nature Communications (2025)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.nature.com/articles/s41419-024-06969-z" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Cell cycle regulation in cancer therapy
+                    </a>
+                    <p class="text-sm text-muted mt-1">Cell Death & Disease (2024)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.nature.com/articles/s41586-022-04578-4" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Genetic instability from a single S phase after whole-genome duplication
+                    </a>
+                    <p class="text-sm text-muted mt-1">Nature, 604(7904):146-151 (2022)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30634-3" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Prophase-Specific Perinuclear Actin Coordinates Centrosome Separation and Positioning
+                    </a>
+                    <p class="text-sm text-muted mt-1">Cell Reports, 31: 107681 (2020)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.embopress.org/doi/full/10.15252/embj.2020104419" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Cyclin A triggers Mitosis either via the Greatwall kinase pathway or Cyclin B
+                    </a>
+                    <p class="text-sm text-muted mt-1">EMBO Journal, 61: e104419 (2020)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(18)31284-3" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Two Interlinked Bistable Switches Govern Mitotic Control in Mammalian Cells
+                    </a>
+                    <p class="text-sm text-muted mt-1">Current Biology, 28(23): 3824–3832.e6 (2018)</p>
+                </li>
+                <li class="p-4 bg-lab-gray rounded-lg hover:shadow-md transition-shadow duration-200">
+                    <a href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30400-3" 
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        DNA Replication Determines Timing of Mitosis by Restricting CDK1 and PLK1 Activation
+                    </a>
+                    <p class="text-sm text-muted mt-1">Molecular Cell, 71:117–128.e3 (2018)</p>
+                </li>
             </ul>
-    <hr>
-        <h3>Methodology</h3>
-            <ul>
-                <li>Chemical Genetics and Gene Targeting</li>
-                <p></p>
-                <li>High content and super resolution microscopy</li>
-                <p></p>
-                <li>Image processing and analysis using Python</li>
-            </ul>
-    <hr>
-    <h3>Curriculum Vitae</h3>
-<table cellspacing=20>
-    <thead>
-    <tr>
-        <th>Dates</th>
-        <th>Position</th>
-        <th>Employer</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>2022 - </td>
-        <td>Professor in Genome Stability</td>
-        <td>University of Sussex, UK</td>
-    </tr>
-    <tr>
-        <td>2016 - 2022</td>
-        <td>Reader in Genome Stability</td>
-        <td>University of Sussex, UK</td>
-    </tr>
-    <tr>
-        <td>2012 - 2018</td>
-        <td>CRUK Senior Research Fellow</td>
-        <td>University of Sussex, UK</td>
-    </tr>
-    <tr>
-        <td>2007 - 2012</td>
-        <td>Wellcome Trust Career Development Fellow</td>
-        <td>University of Sussex, UK</td>
-    </tr>
-    <tr>
-        <td>2002 - 2007</td>
-        <td>Postdoctoral Researcher with Shunichi Takeda</td>
-        <td>Kyoto University, Japan</td>
-    </tr>
-    <tr>
-        <td>1998 - 2002</td>
-        <td>PhD with Tim Hunt</td>
-        <td>ICRF Clare Hall, UK</td>
-    </tr>
-    <tr>
-        <td>1998</td>
-        <td>Diplom Biochemistry</td>
-        <td>Freie Universitaet Berlin, Germany</td>
-    </tr>
-    </tbody>
+        </section>
 
-</table>
- <hr> 
- 
+        <!-- Current Funding -->
+        <section class="bg-white rounded-lg p-8 shadow-sm">
+            <h2 class="text-2xl font-semibold text-ink mb-6 border-b border-lab-gray pb-2">
+                Current Funding
+            </h2>
+            <div class="space-y-4">
+                <div class="p-4 border-l-4 border-lab-blue bg-lab-gray rounded-r-lg">
+                    <a href="https://www.cancerresearchuk.org/funding-for-researchers/our-funding-schemes/discovery-programme-awards"
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        CRUK Discovery Program Award
+                    </a>
+                    <p class="text-sm text-ink mt-1">
+                        Exploiting a new cell cycle control pathway for cancer therapy
+                    </p>
+                    <p class="text-sm text-muted">2022-2027</p>
+                </div>
+                <div class="p-4 border-l-4 border-lab-blue bg-lab-gray rounded-r-lg">
+                    <a href="https://breastcancernow.org"
+                       class="text-lab-blue hover:text-accent transition-colors duration-200 font-medium">
+                        Breast Cancer Now Preclinical Catalyst Award
+                    </a>
+                    <p class="text-sm text-ink mt-1">
+                        Validating a new combinatorial approach for Palbociclib to target triple-negative breast cancer
+                    </p>
+                    <p class="text-sm text-muted">2022-2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
- <h3>Publications</h3>
- <p><a href="https://scholar.google.com/citations?user=Z-WmjVsAAAAJ&hl=en"> Google Scholar Profile</a></p>
- <p><a href="https://orcid.org/0000-0001-8366-6198"> Orchid Profile</a></p>
- <p><a href="https://www.researchgate.net/profile/Helfrid-Hochegger"> Researchgate </a></p>
- 
- <h4>Recent contributions</h4>
- <ul>
-    <li>
-        <a href="https://www.nature.com/articles/s41586-022-04578-4"> 
-            Genetic instability from a single S phase after whole-genome 
-            duplication. Nature, 604(7904):146-151 (2022)
-        </a>
-    </li>
-    <p></p>
-    <li> 
-        <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30634-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124720306343%3Fshowall%3Dtrue">
-            Prophase-Specific Perinuclear Actin Coordinates Centrosome 
-            Separation and Positioning to Ensure Accurate Chromosome Segregation. 
-            Cell Rep. 31: 107681 (2020)
-        </a>
-    </li>
-    <p></p>
-    <li>
-        <a href="https://www.embopress.org/doi/full/10.15252/embj.2020104419">
-            Cyclin A triggers Mitosis either via the Greatwall kinase pathway or Cyclin B. EMBO J. 61: e104419 (2020)</li>
-        </a>
-    </li>
-    <p></p>
-    <li>
-        <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(18)31284-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982218312843%3Fshowall%3Dtrue">
-            Two Interlinked Bistable Switches Govern Mitotic Control in Mammalian Cells. Curr. Biol.28(23): 3824–3832.e6 (2018)
-        </a>
-    </li>
-    <p></p>
-    <li>
-        <a href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30400-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276518304003%3Fshowall%3Dtrue">
-            DNA Replication Determines Timing of Mitosis by Restricting CDK1 and PLK1 Activation. Molecular Cell 71:117–128.e3 (2018)
-        </a>
-    </li>
- </ul>
-<hr>
-<h3>Current Funding</h3>
-<ul>
-    <li><a href="https://www.cancerresearchuk.org/funding-for-researchers/our-funding-schemes/discovery-programme-awards">
-        CRUK Discovery Program Award
-    </a>
-    Exploiting a new cell cycle control pathway for cancer therapy (2022-2027)
-</li>
-<li>
-    <a href="https://breastcancernow.org">
-        Breast Cancer Now Preclinical Catalyst Award
-    </a>
-    Validating a new combinatorial approach for Palbociclib
-     to target triple-negative breast cancer
-     (2022-2025)
-</li>
-</ul>
-
- 
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <p class="text-center text-muted text-sm">
+                © 2024 Helfrid Hochegger • Cell Cycle Control Laboratory • University of Sussex
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
